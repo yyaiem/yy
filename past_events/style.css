@@ -91,6 +91,19 @@ font-size: 2dvh;
 
 }
 
+    .event_date {
+        font-size: 8px;
+    }
+
+    .event_section {
+        margin-bottom: 30px;
+    }
+
+    .reg_btn {
+        padding: 4px;
+        font-size: 8px;
+    }
+
 
 /* Unique for pages end */
 
