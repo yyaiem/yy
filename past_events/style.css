@@ -94,6 +94,12 @@ font-size: 2dvh;
 
 }
 
+.btn_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
     .event_date {
         font-size: 8px;
     }
