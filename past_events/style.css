@@ -94,6 +94,17 @@ font-size: 2dvh;
 
 }
 
+.reg_btn {
+    font-weight: bolder;
+    /* display: flex; */
+    display: inline;
+    /* position: sticky; */
+    padding: 10px;
+    background-color: #ffffff36;
+    border-radius: 10px;
+    color: white;
+}
+
 .btn_container {
     display: flex;
     justify-content: space-between;
