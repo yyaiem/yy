@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcomeing Events - YantraYodha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../site_files/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="site_body">
+
+        <header>
+            <nav>
+                <ul class="nav_items">
+                    <a class="home_logo" href="../">
+                        <img class="home_logo" src="../site_files/transparent YY logo.png" height="40px"
+                            alt="YantraYodha">
+                    </a>
+                    <li class="nav_text"><a class="navbar_text" href="../">Home</a></li>
+                    <!-- <li class="nav_text"><a class="navbar_text" href="../upcoming_events/upcomeing_events.html">Upcoming Events</a></li> -->
+                    <li class="nav_text"><a class="navbar_text" href="../past_events/">Past Events</a>
+                    </li>
+                    <li class="nav_text"><a class="navbar_text" href="../organizers/">Organizers</a></li>
+                    
+                    <li class="nav_text"><a class="navbar_text" href="https://yyaiem.github.io/projects/" target="_blank">Projects</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank">AIEM</a>
+                    </li>
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/" target="_blank">
+                            <img class="abacus_logo" src="../site_files/aiem.png" height="40px" alt="Abacus institute">
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main id="main">
+            <!-- notfcation area  -->
+            <div id="notificationArea"></div>
+
+            <!-- no event message  -->
+            <div class="event_section" id="Loading_Screen">
+                <div class="event">
+                    <div class="event_text">
+                        <div>
+                            <h1 class="event_name" id="noMsgtext"> Loading...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- event -->
+            <!--             <div class="event_section">
+                <div class="event">
+                    <img class="event_banner" src="../events_files/web banner mid resulation.png" alt="GitGrind Workshop Banner">
+
+                    <div class="event_text">
+                        <div>
+                            <h1 class="event_name">TechCraft</h1>
+                        </div>
+                        <p class="event_description">An project competition where students from any department can showcase innovative hardware and software models. It fosters creativity, technical expertise, and cross-disciplinary collaboration.</p>
+                        <div class="btn_container">
+
+                            <p class="event_date">28th September 2024</p>
+                            <a href="https://yyaiem.github.io/techcraft_reg/"> 
+                                <p class="reg_btn">Register Now!</p>
+                             </a> 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </main>
+
+        <footer>
+            <div class="copy_text">
+                <div class="copy_text">
+                    <p class="copyright foot_txt footer_items" id="version"></p>
+                    <p class="copyright foot_txt footer_items">&COPY; <strong id="year"></strong> Pinaka</p>
+                    <!-- <div class="powerdby_text"></div> -->
+                    <p class="powerd_by foot_txt footer_items">Powerd by GitHub</p>
+                    <img class="github_icon foot_txt" src="../site_files/github.png" alt="GitHub Logo" height="20px">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+
+        document.getElementById("Loading_Screen").style.display = "block"
+
+
+
+        let UpComeingEvents = JSON.parse(localStorage.getItem("UpComeingEvents"))
+
+        // if (UpComeingEvents.length === 0) {
+        //     document.getElementById("NoEventMessage").style.display = "block"
+        // }
+
+
+
+        if (!UpComeingEvents || UpComeingEvents.length == 0) {
+            document.getElementById("Loading_Screen").style.display = "block"
+            FetchEventData("u")
+        }
+        else if (UpComeingEvents && UpComeingEvents.length > 0) {
+            console.log(UpComeingEvents)
+            loadEvents(UpComeingEvents,"u")
+            FetchEventDataSafe("u")
+        }
+
+    </script>
+</body>
+
+</html>

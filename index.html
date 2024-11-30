@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YantraYodha AIEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./site_files/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="site_body">
+
+        <header>
+            <nav>
+                <ul class="nav_items">
+                    <a class="home_logo" href="./">
+                        <img class="home_logo" src="./site_files/transparent YY logo.png" height="40px"
+                            alt="YantraYodha">
+                    </a>
+                    <li class="nav_text"><a class="navbar_text" href="./upcoming_events/">Upcoming
+                            Events</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="./past_events/">Past Events</a>
+                    </li>
+
+                    <li class="nav_text"><a class="navbar_text" href="./organizers/">Organizers</a></li>
+                    
+                    <li class="nav_text"><a class="navbar_text" href="https://yyaiem.github.io/projects/" target="_blank">Projects</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank">AIEM</a>
+                    </li>
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank"><img class="abacus_logo" src="./site_files/aiem.png" height="40px"
+                                alt="Abacus institute"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- notfcation area  -->
+            <div id="notificationArea">
+
+                <!-- alert message -->
+                <!-- <div class="alert ">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong>Page Under Maintenance:</strong>
+                </div> -->
+
+            </div>
+
+
+            <div class="site_head  ">
+
+                <div class="intro">
+                    <h1 class="home_head_text">
+                        YantraYodha Club - Abacus Institute of Engineering and Management
+                    </h1>
+                    <p class="group_member_amount" id="grp_mem_count">Calculating Community Members...</p>
+                </div>
+            </div>
+
+            <div class="join_us">
+                <a class="join_us_btn" target="_blank" href="https://yyaiem.github.io/member_registration/">
+                    Join Us </a>
+            </div>
+
+            <div class="about_us">
+                <h1 class="about_head">About</h1>
+                <p class="about_text">Welcome to YantraYodha, the hardware project club of Abacus Institute of
+                    Engineering and Management. We aim to delve deep into the realm of electronics, programming, and
+                    robotics while fostering a community of learners and innovators.
+                    <br><br>
+                    At YantraYodha, knowledge is best shared. Our seniors act as guides to juniors through the concepts
+                    of programming languages, microcontrollers, electronic sensors, IoT or Internet of Things, Linux,
+                    web development, and many more. Interactive sessions, workshops, and hands-on projects will be
+                    arranged to equip our members with the needed skills and confidence required to thrive in today's
+                    technology-driven world.
+                    <br><br>
+                    Innovation and creativity are a part of YantraYodha. Innovation and creativity are the cornerstones
+                    of YantraYodha. Many project competitions are organized which really help students showcase their
+                    ingenuity and problem-solving skills. The competitions not only provide a platform for the students
+                    to show their technical feats but also foster collaboration and teamwork.
+                    <br><br>
+                    Besides competitions, we regularly organize practical workshops covering technologies or concepts in
+                    which participation is deeply involved. Whether it be learning to construct a robot from scratch, or
+                    seeing in detail how IoT development works, our workshops provide hands-on, real-world experience
+                    that is more extensive than classroom learning.
+                    <br><br>
+                    Besides this, YantraYodha organizes seminars and guest lectures from experts of both industry and
+                    academia. This provides our members with the most up-to-date trends in technology advancement and
+                    thus inspires them to push beyond the limits of what is possible.
+                    <br><br>
+                    But YantraYodha is something more than a club; it's a community. We work together for the inclusion
+                    of every member into our learnings and make them feel important. We believe in collaboration,
+                    mentorship, and common interest in technology that empowers upcoming engineers and innovators.
+                    <br><br>
+                    From being pros to freshers among the swarm of hardware and robotics, YantraYodha invites you to
+                    join hands to take on this exciting journey of exploration, innovation, and making a difference in
+                    the world through technology.
+                </p>
+            </div>
+
+            <!-- <div class="social_links">
+
+                <a class="social_icons" href="mailto:yantrayodha+faq_page@gmail.com" target="_blank">
+                    <img class="social_icons" src="./index_page_files/mail.png" alt="Mail to yantrayodha">
+                </a>
+
+            </div> -->
+
+        </main>
+
+        <footer>
+            <div class="copy_text">
+                <p class="copyright foot_txt footer_items" id="version"></p>
+                <p class="copyright foot_txt footer_items">&COPY; <strong id="year"></strong> Pinaka</p>
+                <!-- <div class="powerdby_text"></div> -->
+                <p class="powerd_by foot_txt footer_items">Powerd by GitHub</p>
+
+                <img class="github_icon foot_txt" src="./site_files/github.png" alt="GitHub Logo" height="20px">
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+
+        fetchNotifData()
+        fetchData();
+        updateMembersCount();
+        FetchEventDataSafe()
+    </script>
+</body>
+
+</html>

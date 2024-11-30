@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    background-color: rgb(30, 0, 63);
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.124);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+
+}
+
+.home_logo {
+    /* left: 4dvh; */
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+.nav_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+
+.navbar_text {
+    color: white;
+    font-size: 18px;
+    /* font-style: normal; */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.124);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 960px) {
+    .alert {
+        margin: 8px;
+        padding: 8px;
+    }
+}
+
+.notificatioon_link {
+    color: white;
+    /* font-size:medium; */
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Unique for pages start */
+
+.site_head {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    cursor: default;
+}
+
+.home_head_text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4dvh;
+}
+
+.group_member_amount {
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2dvw;
+    margin-top: 1dvh;
+    font-size: 2dvh;
+}
+
+.join_us {
+    list-style-type: none;
+    margin: 20px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor:; */
+}
+
+.join_us_btn {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2dvh;
+    background-color: rgba(247, 247, 247, 0.263);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.about_us {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+}
+
+.about_head {
+    color: aliceblue;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4dvh;
+    margin-bottom: 8px;
+}
+
+.about_text {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2dvh;
+}
+
+.social_links {
+    list-style-type: none;
+    margin: 20px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_icons {
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Unique for pages end */
+
+footer {
+    list-style-type: none;
+    margin: 20px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    cursor: none;
+}
+
+.copy_text {
+    display: flex;
+    color: white;
+    justify-content: right;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer_items {
+    font-size: 10px;
+    margin-right: 28px;
+    margin-left: 8px;
+}
+
+.github_icon {
+    margin-right: 20px;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    html {
+        background-color: rgb(0, 40, 73);
+
+    }
+
+    body {
+        background-color: rgba(255, 255, 255, 0.124);
+        margin: 8px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .nav_items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 8px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 8px;
+        padding: 4px;
+
+    }
+
+    .home_logo {
+        /* left: 2dvw; */
+        cursor: pointer;
+        height: 2dvh;
+        margin-left: 8px;
+    }
+
+    .abacus_logo {
+        cursor: pointer;
+        height: 2dvh;
+    }
+
+    .nav_text {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 12px;
+    }
+
+    .navbar_text {
+        color: white;
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+    /* Unique for pages start */
+
+    .site_head {
+        list-style-type: none;
+        margin: 8px;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        cursor: default;
+    }
+
+    .home_head_text {
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+
+    }
+
+    .group_member_amount {
+        color: white;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 2dvw;
+        font-size: 10px;
+    }
+
+
+    .join_us {
+        list-style-type: none;
+        margin: 8px;
+        padding: 6px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .join_us_btn {
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: rgba(247, 247, 247, 0.263);
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .about_us {
+        list-style-type: none;
+        margin: 8px;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+    }
+
+    .about_head {
+        color: aliceblue;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 4dvw;
+        margin-bottom: 8px;
+    }
+
+    .about_text {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3dvw;
+    }
+
+    .social_links {
+        list-style-type: none;
+        margin: 8px;
+        padding: 2px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Unique for pages end */
+
+
+    footer {
+        list-style-type: none;
+        margin: 8px;
+        padding: 6px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        cursor: none;
+    }
+
+    .footer_items {
+        font-size: 8px;
+        margin-right: 8px;
+        margin-left: 4px;
+    }
+
+
+}

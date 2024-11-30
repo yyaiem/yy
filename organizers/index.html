@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizers - YantraYodha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../site_files/favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'signeture';
+            /* Name you will use to refer to this font */
+            src: url('./Contributers/Photograph\ Signature.ttf') format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="site_body">
+
+        <header>
+            <nav>
+                <ul class="nav_items">
+                    <a class="home_logo" href="../">
+                        <img class="home_logo" src="../site_files/transparent YY logo.png" height="40px"
+                            alt="YantraYodha">
+                    </a>
+                    <li class="nav_text"><a class="navbar_text" href="../">Home</a></li>
+                    <li class="nav_text"><a class="navbar_text" href="../upcoming_events/">Upcoming
+                            Events</a></li>
+                    <li class="nav_text"><a class="navbar_text" href="../past_events/">Past Events</a>
+                    </li>
+                    <!-- <li class="nav_text"><a class="navbar_text" href="../organizers/organizers.html">Organizers</a></li> -->
+                    
+                    <li class="nav_text"><a class="navbar_text" href="https://yyaiem.github.io/projects/" target="_blank">Projects</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank">AIEM</a>
+                    </li>
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank"><img class="abacus_logo" src="../site_files/aiem.png" height="40px"
+                                alt="Abacus institute"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main id="main">
+            <!-- notfcation area  -->
+            <div id="notificationArea"></div>
+
+            <div class="event_section" id="Loading_Screen">
+                <div class="event">
+                    <div class="event_text">
+                        <div>
+                            <h1 class="event_name" id="noMsgtext"> Loading...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="containerA"></div>
+            <div id="containerB"></div>
+
+            <div class="contributContainer">
+                <p class="gretText">Special Thanks to</p>
+                <div class="dpContainer">
+                    <img id="Pinaka-DP" class="contriDp" style="border-radius: 50%;">
+                    <img src="./Contributers/github.png" alt="" srcset="" class="contriDp">
+                    <img src="./Contributers/raspberry.png" alt="" srcset="" class="contriDp">
+                    <img src="./Contributers/debian.png" alt="" srcset="" class="contriDp">
+                    <img src="./Contributers/ubuntu-logo-vector.svg" alt="" srcset="" class="contriDp">
+                    <img src="./Contributers/google.png" alt="" srcset="" class="contriDp">
+                    <img src="./Contributers/arduino.png" alt="" srcset="" class="contriDp">
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <div class="copy_text">
+                <div class="copy_text">
+                    <p class="copyright foot_txt footer_items" id="version"></p>
+                    <p class="copyright foot_txt footer_items">&COPY; <strong id="year"></strong> Pinaka</p>
+                    <!-- <div class="powerdby_text"></div> -->
+                    <p class="powerd_by foot_txt footer_items">Powerd by GitHub</p>
+    
+                    <img class="github_icon foot_txt" src="../site_files/github.png" alt="GitHub Logo" height="20px">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        document.getElementById("Loading_Screen").style.display = "block"
+        FetchEventDataSafe();
+        FetchData(OrganizerAPI, "containerA");
+        setTimeout(() => {
+            FetchData(mentorAPI, "containerB");
+        }, 2000);
+
+        async function getGitHubProfilePic(username) {
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}`);
+                const data = await response.json();
+
+                // Get the profile picture URL
+                const profilePicUrl = data.avatar_url;
+
+                // Set the image source to the profile picture URL
+                document.getElementById("Pinaka-DP").src = profilePicUrl;
+            } catch (error) {
+                // console.error("Error fetching GitHub profile:", error);
+            }
+        }
+        getGitHubProfilePic("pin4ka")
+    </script>
+</body>
+
+</html>
