@@ -30,7 +30,7 @@ body {
 }
 
 .home_logo {
-    left: 4dvh;
+    /* left: 4dvh; */
     cursor: pointer;
     margin-left: 18px;
 
@@ -87,6 +87,7 @@ body {
 }
 
 /* Unique for pages start */
+
 .event {
     margin: 20px;
     padding: 20px;
@@ -146,6 +147,7 @@ body {
     color: white;
 }
 
+
 /* Unique for pages end */
 
 footer {
@@ -173,7 +175,6 @@ footer {
 
 .github_icon {
     margin-right: 20px;
-
 }
 
 
@@ -184,7 +185,7 @@ footer {
 
 @media only screen and (max-width: 960px) {
     html {
-        background-color: rgb(72, 8, 8);
+        background-color: rgb(7, 78, 55);
     }
 
     body {
@@ -282,7 +283,6 @@ footer {
         margin-bottom: 30px;
     }
 
-    
     /* Unique for pages end */
 
 
