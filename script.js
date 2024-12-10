@@ -1,4 +1,4 @@
-vEr = "v 3.0.0";
+vEr = "v 3.0.1";
 
 
 const noTificationData = "https://script.google.com/macros/s/AKfycbx9Z8rpXcwGSmFW8CbmSU66SNBwS8MtfhIuKM6wlPAqA2417HN8BVIL-rvcbTHeNOqZ/exec";
@@ -17,7 +17,7 @@ async function fetchNotifData() {
         }
     } catch (error) {
         console.error('Error fetching data:', error);
-        notiFications([["Error fetching Notifications - Reload", "", "1"]])
+        // notiFications([["Error fetching Notifications - Reload", "", "1"]])
     }
 }
 
