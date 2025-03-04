@@ -1,4 +1,4 @@
-vEr = "v 3.0.1";
+vEr = "v 3.0.2";
 
 
 const noTificationData = "https://script.google.com/macros/s/AKfycbx9Z8rpXcwGSmFW8CbmSU66SNBwS8MtfhIuKM6wlPAqA2417HN8BVIL-rvcbTHeNOqZ/exec";
