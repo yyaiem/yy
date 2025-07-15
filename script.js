@@ -68,11 +68,11 @@ function notiFications(data) {
     }
 }
 
-const googleAppsScriptURL = 'https://script.google.com/macros/s/AKfycbw__R_BDgzpCiYG-VYk7S56nmD0T7ua5HB1G_b2OfsGM3BJFiSiUeoUOny7CjeVfGYcaA/exec';
-
+const memBerCountAPI = 'https://script.google.com/macros/s/AKfycbw__R_BDgzpCiYG-VYk7S56nmD0T7ua5HB1G_b2OfsGM3BJFiSiUeoUOny7CjeVfGYcaA/exec';
+// https://script.google.com/macros/s/AKfycbwMGOa8BKdxEn72dgKoJ_Qy20u0iknWFA_oZV4CW8rb8j8f5JHAnEnqZhCTjg47VXUi7w/exec   -- new v
 async function fetchData() {
     try {
-        const response = await fetch(googleAppsScriptURL);
+        const response = await fetch(memBerCountAPI);
         if (!response.ok) {
             throw new Error('HTTP error! Status: ${ response.status } ');
         }
