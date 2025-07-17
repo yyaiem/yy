@@ -68,8 +68,7 @@ function notiFications(data) {
     }
 }
 
-const memBerCountAPI = 'https://script.google.com/macros/s/AKfycbw__R_BDgzpCiYG-VYk7S56nmD0T7ua5HB1G_b2OfsGM3BJFiSiUeoUOny7CjeVfGYcaA/exec';
-// https://script.google.com/macros/s/AKfycbwMGOa8BKdxEn72dgKoJ_Qy20u0iknWFA_oZV4CW8rb8j8f5JHAnEnqZhCTjg47VXUi7w/exec   -- new v
+const memBerCountAPI = 'https://script.google.com/macros/s/AKfycbwMGOa8BKdxEn72dgKoJ_Qy20u0iknWFA_oZV4CW8rb8j8f5JHAnEnqZhCTjg47VXUi7w/exec'
 async function fetchData() {
     try {
         const response = await fetch(memBerCountAPI);
