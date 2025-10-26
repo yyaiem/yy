@@ -195,7 +195,7 @@ a {
     font-family: 'signeture';
 }
 .contriDp{
-    height: 18dvh;
+    height: 8dvh;
     margin: 8px;
 }
 
@@ -341,7 +341,7 @@ footer {
         font-weight: bold;
     }
     .contriDp{
-        height: 50px;
+        height: 30px;
         margin: 4px;
     }
     /* Unique for pages end */
